@@ -5,66 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sample pdf</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <section>
+    <section class="main-section">
       <!-- logo -->
       <div id="logo">
         <img src="" alt="" />
       </div>
 
-      <div>
-        <p>
-          <strong>Office Hours </strong> Mon to Thursday 7:30 to 16:30 Friday
-          07:30 to 13:30
-        </p>
-        <p>
-          <strong>Payment Hours </strong> Mon to Thursday 7:30 to 16:30 Friday
-          07:30 to 12:30
-        </p>
-      </div>
-
-      <div>
+      <div class="main-container">
+        <div style="text-align: right; margin-right: 180px;">
         <h1>Emakagleni Local Municipality</h1>
-        <p>PO Box 3 eMalahleni 1035</p>
-        <p>Tel:013 690 6911</p>
-        <p>Fax:013 690 6207</p>
-        <p>Vat No.:4000142457</p>
+        <div style="margin-right: 90px;">
+          <p>PO Box 3 eMalahleni 1035</p>
+          <p>Tel:013 690 6911</p>
+          <p>Fax:013 690 6207</p>
+          <p>Vat No.:4000142457</p>
+        </div>
+     </div>
+     <div style="display: flex;margin-top: 20px;">
+       <div style="margin-left: 20px; font-size: 13px;">
+        <p>
+          <strong>Office Hours </strong> Mon to Thursday 7:30 to 16:30 Friday 07:30 to 13:30
+        </p>
+        <p style="margin-top: 10px;">
+          <strong>Payment Hours </strong> Mon to Thursday 7:30 to 16:30 Friday  07:30 to 12:30
+       </p>
       </div>
-
-      <div>
+      <div style="margin-left: 415px;margin-bottom: 20px; font-size: 13px;">
         <p><strong>KWAGUQA</strong> Tel:(013) 698-0262 Fax:(013)690-6207</p>
-        <p><strong>OGGIES</strong> Tel:(013) 643-1027 Fax:(013)690-2039</p>
+        <p style="margin-top: 10px;"> <strong>OGGIES</strong> Tel:(013) 643-1027 Fax:(013)690-2039</p>
       </div>
+
+    </section>
+
+    <section style="border: 1px solid; padding: 10px;">
+      <h1 style="text-align: center;">TAX INVOICE/STATEMENT OF ACCOUNT</h1>
+      <div style="display: flex;">
+        <div style="margin-left: 10px; margin-top: 10px;">
+          <p>Account Number: 000402393</p>
+          <p>Consumer Name: THOMAS NTHABISENG MOKONENI</p>
+          <p>Postal Address: KWA-GUQA EXT 7 ERF NO 4114 WITBANK</p>
+          <p>Postal code:1038</p>
+          <p>Interest Pin:353579124</p>
+        </div>
+
+        <div style="margin-left: 400px;">
+          <p>Account Date: 22 Jan 2022</p>
+          <p>Tax Invoice No: 0004002393022201</p>
+          <p>Vat Registration N0 : 0</p>
+          <p>ERF Description: 51007 000004114 0000 0000 0000</p>
+          <p>Market value: 390,000.00</p>
+          <p>Street: KWA EXT 7,4114</p>
+          <p>Land Area: <span>300.000</span></p>
+          <p>Deposit: <span>0.00</span></p>
+        </div>
+      </div>
+  
     </section>
 
     <section>
-      <h1>TAX INVOICE/STATEMENT OF ACCOUNT</h1>
-      <div>
-        <p>Account Number: 000402393</p>
-        <p>Consumer Name: THOMAS NTHABISENG MOKONENI</p>
-        <p>Postal Address: KWA-GUQA EXT 7 ERF NO 4114 WITBANK</p>
-        <p>Postal code:1038</p>
-        <p>Interest Pin:353579124</p>
-      </div>
-
-      <div>
-        <p>Account Date: 22 Jan 2022</p>
-        <p>Tax Invoice No: 0004002393022201</p>
-        <p>Vat Registration N0 : 0</p>
-        <p>ERF Description: 51007 000004114 0000 0000 0000</p>
-        <p>Market value: 390,000.00</p>
-        <p>Street: KWA EXT 7,4114</p>
-        <p>Land Area: <span>300.000</span></p>
-        <p>Deposit: <span>0.00</span></p>
-      </div>
-    </section>
-
-    <section>
-      <h1>METER READINGS</h1>
-      <div>
-        <table>
-          <tr>
+      <h1 style="text-align: center;padding: 5px;">METER READINGS</h1>
+      <div class="table-container">
+        <table style="width: 100%; background-color: ;">
+          <tr> 
             <th>METER NO.</th>
             <th>METER TYPE.</th>
             <th>OLD READING.</th>
@@ -86,14 +91,14 @@
       </div>
     </section>
 
-    <section>
-      <div>
+    <section style="border: 1px solid;">
+      <div style="text-align: center; padding: 5px;">
         <h1>ACCOUNT DETAILS</h1>
-        <h6>(Rates:638.98,Exemption:- 81.92,Rebate-194.97)</h6>
+        <p>(Rates:638.98,Exemption:- 81.92,Rebate-194.97)</p>
       </div>
 
-      <div>
-        <table>
+      <div class="table-container">
+        <table style="width: 100%;">
           <tr>
             <th>DATE</th>
             <th>CODE</th>
@@ -179,7 +184,8 @@
     </section>
 
     <section>
-      <table>
+      <div class="table-container">
+       <table style="width: 100%;">
         <tr>
           <th>120+ DAYS</th>
           <th>90 DAYS</th>
@@ -198,10 +204,11 @@
           <td>112,114.48</td>
         </tr>
       </table>
+      </div>
     </section>
 
     <section>
-      <div>
+      <div style="text-align: center; color: red; font-size: 12px; border:  1px solid black; padding: 5px;">
         <p>
           CUSTOMERS ARE HUMBLY REQUESTED TO SETTLE THEIR MUNICIPAL SCCOUNTS
           BEFORE THE 7TH OF EACH MONTH TO AVOID CUT OFFS
@@ -218,43 +225,45 @@
       </div>
     </section>
 
-    <section>
-      <div>
+    <section style="border: 1px solid black;">
+      <div style="display: flex; margin: 10px;" >
+       <div>
         <h1><strong> REMITTANCE ADVICE</strong></h1>
-        <p><strong>NUMBER:</strong>0004002393</p>
-        <p><strong>NAME:</strong>THOMAS NTHABISENG MOKONENI</p>
-        <p><strong>DUE:</strong>112,114.48</p>
-        <p><strong>DUE ON OR BEFORE</strong>07/02/2022</p>
+        <div style="margin-right: 400px; margin-top: 20px;">
+        <div style="margin-top: 20px;">
+          <p><strong>BANK NAME:</strong>ABSA</p>
+          <p><strong>ACCOUNT NAME:</strong>Emalahleni Local Municipality</p>
+          <p><strong>ACCOUNT NUMBER:</strong>1360000091</p>
+          <p><strong>REFERENCE:</strong>0004002393</p>
+        </div>
+        </div>
       </div>
 
-      <div>
-        <h1><strong>BANKING DETAILS</strong></h1>
-        <p><strong>BANK NAME:</strong>ABSA</p>
-        <p><strong>ACCOUNT NAME:</strong>Emalahleni Local Municipality</p>
-        <p><strong>ACCOUNT NUMBER:</strong>1360000091</p>
-        <p><strong>REFERENCE:</strong>0004002393</p>
+      <div  style="margin-left: 50px;">
+        <h1><strong>BANKING DETAILS </strong></h1>
+        <div style="margin-top: 20px;">
+              <p><strong>NUMBER:</strong> <span class="text-space">0004002393</span></p>
+          <p><strong>NAME:</strong> <span class="text-space">NTHABISENG <br</span> </p>
+          <p><strong>DUE:</strong> <span class="text-space">112,114.48</span></p>
+          <p><strong>DUE ON OR BEFORE</strong> <span class="text-space">07/02/2022</span></p>
+        </div>
+      </div>
       </div>
 
-      <div>
-        <!-- easypay logo -->
-        <img src="" alt="" />
-        <!-- pay logo -->
-        <img src="" alt="" />
-      </div>
+      <section  style="flex; border-bottom: 1px solid;">
+        <p style="margin-left: 700px; margin-top: 10px ; padding: 5px;">00040000002393 </p>
 
-      <div>
-        <p>>>>91 1810 0040 0239 36</p>
-        <p>11959 0000 0400 2393</p>
-      </div>
+        <div style="margin-left: 100px; ">
+          <p>>>>>91 1810 0040 0239 36</p>
+          <p>11959 0000 0400 2393</p>
+        </div>
+       
+        
+         <div style="text-align: right; margin-right: 25px;">
+          <p><strong>Printed By:</strong>MUNSYS_BRIGHTON</p>
+        </div>
+      </section> 
       <!--Post Office -->
-      <div>
-        <img src="" alt="" />
-        <p>0004002393</p>
-      </div>
-
-      <div>
-        <p><strong>Printed By:</strong>MUNSYS_BRIGHTON</p>
-      </div>
     </section>
   </body>
 </html>
